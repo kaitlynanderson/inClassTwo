@@ -1,1 +1,52 @@
-/*All css for this project should be in this file only, not in the html file*/
+body {
+  background: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 20px;
+  text-align: center;
+  align-content: center;
+  flex: auto;
+}
+
+h1:hover {
+  color: green;
+  transition: font-size 1s ease-out 1s;
+}
+
+h5 {
+  animation: sidetoside 15s infinite ease-in-out
+  alternate;
+}
+
+@keyframes sidetoside {
+  from { margin-left: -60%;
+  }
+  to { margin-left: 60%;
+  }
+}
+
+h3:hover {
+  color: blue;
+  transition: font-size 1s ease-out 1s;
+}
+
+.sidebar {
+    position: absolute;
+    left:0;
+    top:150px;
+    width: 200px;
+    bottom:0;
+    border-right: 1px solid black;
+}
+
+.content {
+    position: absolute;
+    left:178px;
+    top:150px;
+    right:0;
+    bottom:0;
+}
+
+h4:hover {
+  color: green;
+}
